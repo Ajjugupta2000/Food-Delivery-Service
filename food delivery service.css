@@ -1,0 +1,236 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Fredoka One', cursive;
+}
+
+header::before {
+    background-color: black;
+    width: 100%;
+    height: 10%;
+    /* "position:absolute property is very important here we can change alignment of background images by changing top and left values */
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    content: "";
+    z-index: -1;
+}
+
+#home::before {
+    background: url('images/food.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 70%;
+    /* "position:absolute property is very important here we can change alignment of background images by changing top and left values */
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    content: "";
+    z-index: -1;
+    opacity: 0.8;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    height: 70px;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul li {
+    list-style-type: none;
+}
+
+.navbar #logo img {
+    width: 60px;
+    height: 60px;
+    margin: 10px 45px;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-size: 22px;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+li a:hover {
+    color: black;
+    background-color: rgb(199, 45, 45);
+}
+
+#home {
+    margin: 0px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    padding: 0px 100px;
+}
+
+#home h1 {
+    font-size: 40px;
+}
+
+#home p {
+    color: white;
+    font-family: 'Great Vibes', cursive;
+    font-size: 35px;
+    text-align: center;
+}
+
+#service {
+    margin: 15px;
+    text-align: center;
+}
+
+.btn {
+    background-color: brown;
+    width: 130px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 22px;
+    cursor: pointer;
+    border: 2px solid black;
+    margin: 10px;
+}
+
+.btn:hover {
+    background-color: rgb(216, 131, 20);
+}
+
+#listing {
+    display: flex;
+    justify-content: center; 
+}
+
+.foodlisting {
+    width: 370px;
+    height: 420px;
+    border: 5px solid rgba(148, 2, 2, 0.726);
+    display: flex;
+    border-radius: 10%;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px 20px;
+    background-color: #ccc4c5;
+    align-items: center;
+}
+
+.foodlisting img {
+    /* since img tag is inline tag so we have to use display:block */
+    display: block;
+    width: 220px;
+    height: 150px;
+    margin: auto;
+}
+
+.foodlisting p {
+    color: rgb(0, 0, 0);
+    font-family: 'Great Vibes', cursive;
+    font-size: 25px;
+    word-spacing: 2px;
+    text-align: center;
+    margin: 10px;
+}
+
+#client::before {
+    background: url('images/client.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    content: "";
+    position: absolute;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#client {
+    display: flex;
+    height: 205px;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid rgb(0, 0, 0);
+    margin: 20px 20px 0px;
+    border-radius: 20px;
+}
+
+.clientdiv {
+    display: flex;
+}
+
+.clientlogo {
+    padding: 30px;
+}
+
+.clientdiv img {
+    width: 100px;
+    height: 95px;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    
+    position: relative;
+    height: 320px;
+    border: 3px solid rgb(0, 0, 0);
+   
+    border-radius: 20px;
+    margin: 20px 20px 10px;
+}
+
+#contact::before {
+    background: url('images/contact.jpg') no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.contactform {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactform input, .contactform textarea {
+    width: 100%;
+    padding: 6px;
+    border-radius: 20px;
+    border: 2px solid black;
+    }
+
+.footer {
+    background-color: black;
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-family: 'Great Vibes', cursive;
+}
+
+/* utility class */
+
+.h-primary {
+    color: rgb(0, 0, 0);
+   
+    font-size: 27px;
+    font-weight: bold;
+    /* we can also use text-align property in place of margin property */
+    text-align: center;
+    
+    
+}
